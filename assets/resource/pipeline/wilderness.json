@@ -388,7 +388,7 @@
             "CollectTrust",
             "TrustDialogueNext",
             "TrustDialogueInteraction",
-            "HomeFlag",
+            "HomeFlagForComBat",
             "[JumpBack]BackButtonWithDelay"
         ]
     },
@@ -470,7 +470,7 @@
             "CollectTrust",
             "TrustDialogueNext",
             "TrustDialogueInteraction",
-            "HomeFlag",
+            "HomeFlagForComBat",
             "[JumpBack]ObtainedAwards",
             "[JumpBack]BackButtonWithDelay",
             "[JumpBack]HomeButton"
@@ -497,7 +497,7 @@
             "CollectTrust",
             "TrustDialogueNext",
             "TrustDialogueInteraction",
-            "HomeFlag",
+            "HomeFlagForComBat",
             "[JumpBack]TestCritterTraining",
             "[JumpBack]BackButtonWithDelay",
             "[JumpBack]HomeButton"
@@ -547,7 +547,7 @@
         "next": [
             "TrustDialogueNext",
             "TrustDialogueInteraction",
-            "HomeFlag",
+            "HomeFlagForComBat",
             "[JumpBack]BackButtonWithDelay",
             "[JumpBack]HomeButton"
         ]
@@ -571,7 +571,7 @@
         "next": [
             "TrustDialogueNext",
             "TrustDialogueInteraction",
-            "HomeFlag",
+            "HomeFlagForComBat",
             "[JumpBack]BackButtonWithDelay",
             "[JumpBack]HomeButton"
         ]
@@ -595,7 +595,7 @@
             "type": "Click"
         },
         "next": [
-            "HomeFlag",
+            "HomeFlagForComBat",
             "[JumpBack]BackButtonWithDelay",
             "[JumpBack]HomeButton"
         ]
@@ -933,5 +933,37 @@
                 ]
             }
         }
+    },
+    "HomeFlagForComBat": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1022,
+                    419,
+                    194,
+                    166
+                ],
+                "template": [
+                    "StartUp/HomeFlag.png",
+                    "StartUp/HomeFlag_sp01.png",
+                    "StartUp/HomeFlag3.2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    576,
+                    298,
+                    68,
+                    64
+                ]
+            }
+        },
+        "next":[
+            "ResourceChapter_Psychube"
+      ]
     }
 }
